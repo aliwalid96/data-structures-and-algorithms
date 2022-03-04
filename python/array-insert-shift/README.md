@@ -7,8 +7,11 @@ output [2,3,6,7,9]
 
 
 ## Whiteboard Process
-[whit board](./1.jpg)
+[whit board](./array-insert-shift.jpg)
 
 ## Approach & Efficiency
+wrot a function that take array and number and insert the number at the middle of array 
+and return the new array 
+
 the big for it
- 4+5n
+ 3+5n
