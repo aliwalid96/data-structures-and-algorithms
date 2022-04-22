@@ -47,38 +47,66 @@ class LinkedList():
             return False
 
 
+
+    def length_(self):
+      
+        length = 0
+        current = self.head
+        while current:
+            length += 1
+            current = current.next
+        return length
+
+    def kth_from_end(self, k):
+       
+
+        length = self.length_()
+        if not -length <= k < length:
+            return ("k not in the range")
+        next_node = None
+        if k >= 0:
+            next_node = length - k - 1
+        if k < 0:
+            next_node = k - 1
+        current = self.head
+        for _ in range(next_node):
+                   current = current.next
+        return current.value
+
+
+
 if __name__ == '__main__':
-    # ll = LinkedList()
-    # a = Node("a")
-    # b = Node("b")
-    # c = Node("c")
-    # ll.insert(a)
-    # ll.insert(b)
-    # ll.insert(c)
-    # print(ll.head.value)
-    # list_insert = LinkedList()
-    # list_insert.insert(Node(1))
-    # list_insert.insert(Node(2))
-    # list_insert.insert(Node(3))
+    # # ll = LinkedList()
+    # # a = Node("a")
+    # # b = Node("b")
+    # # c = Node("c")
+    # # ll.insert(a)
+    # # ll.insert(b)
+    # # ll.insert(c)
+    # # print(ll.head.value)
+    # # list_insert = LinkedList()
+    # # list_insert.insert(Node(1))
+    # # list_insert.insert(Node(2))
+    # # list_insert.insert(Node(3))
 
-    # print(list_insert.ToString())
+    # # print(list_insert.ToString())
 
-    # ll = LinkedList()
-    # a = Node("a")
-    # b = Node("b")
-    # ll.insert(b)
-    # ll.insert(a)
-    # print(ll.includes('abc'))
-    # print(ll.includes('a'))
-    list_str = LinkedList()
-    list_str.insert(Node(1))
-    list_str.insert(Node(2))
-    list_str.insert(Node(3))
-    list_str.insert(Node(4))
-    list_str.insert(Node(5))
-    print(list_str.__str__())
-    expected = '  Head-->  1->  2->  3->  4->  5->  None'
-    print(expected)
+    # # ll = LinkedList()
+    # # a = Node("a")
+    # # b = Node("b")
+    # # ll.insert(b)
+    # # ll.insert(a)
+    # # print(ll.includes('abc'))
+    # # print(ll.includes('a'))
+    # list_str = LinkedList()
+    # list_str.insert(Node(1))
+    # list_str.insert(Node(2))
+    # list_str.insert(Node(3))
+    # list_str.insert(Node(4))
+    # list_str.insert(Node(5))
+    # print(list_str.__str__())
+    # expected = '  Head-->  1->  2->  3->  4->  5->  None'
+    # print(expected)
     
     pass
 
