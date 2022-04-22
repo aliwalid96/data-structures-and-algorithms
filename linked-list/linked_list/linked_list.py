@@ -46,9 +46,10 @@ class LinkedList():
             # print(value)
             return False
 
+
+
     def length_(self):
-        """length method will help to determine the length of 
-        the list to use it in the kth_form_end() func """
+      
         length = 0
         current = self.head
         while current:
@@ -57,9 +58,7 @@ class LinkedList():
         return length
 
     def kth_from_end(self, k):
-        """kth from end
-        argument: a number, k, as a parameter.
-        Return the nodes value that is k places from the tail of the linked list """
+       
 
         length = self.length_()
         if not -length <= k < length:
@@ -70,48 +69,44 @@ class LinkedList():
         if k < 0:
             next_node = k - 1
         current = self.head
-        #"we don't care about the iterator value, just that it should run some specific number of times"
         for _ in range(next_node):
-            """When you are not interested in some values returned by a function we use underscore in place 
-            of variable name . Basically it means you are not interested in how many times the loop 
-            is run till now just that it should run some specific number of times overall."""
-            current = current.next
+                   current = current.next
         return current.value
 
 
 
 if __name__ == '__main__':
-    # ll = LinkedList()
-    # a = Node("a")
-    # b = Node("b")
-    # c = Node("c")
-    # ll.insert(a)
-    # ll.insert(b)
-    # ll.insert(c)
-    # print(ll.head.value)
-    # list_insert = LinkedList()
-    # list_insert.insert(Node(1))
-    # list_insert.insert(Node(2))
-    # list_insert.insert(Node(3))
+    # # ll = LinkedList()
+    # # a = Node("a")
+    # # b = Node("b")
+    # # c = Node("c")
+    # # ll.insert(a)
+    # # ll.insert(b)
+    # # ll.insert(c)
+    # # print(ll.head.value)
+    # # list_insert = LinkedList()
+    # # list_insert.insert(Node(1))
+    # # list_insert.insert(Node(2))
+    # # list_insert.insert(Node(3))
 
-    # print(list_insert.ToString())
+    # # print(list_insert.ToString())
 
-    # ll = LinkedList()
-    # a = Node("a")
-    # b = Node("b")
-    # ll.insert(b)
-    # ll.insert(a)
-    # print(ll.includes('abc'))
-    # print(ll.includes('a'))
-    list_str = LinkedList()
-    list_str.insert(Node(1))
-    list_str.insert(Node(2))
-    list_str.insert(Node(3))
-    list_str.insert(Node(4))
-    list_str.insert(Node(5))
-    print(list_str.__str__())
-    expected = '  Head-->  1->  2->  3->  4->  5->  None'
-    print(expected)
+    # # ll = LinkedList()
+    # # a = Node("a")
+    # # b = Node("b")
+    # # ll.insert(b)
+    # # ll.insert(a)
+    # # print(ll.includes('abc'))
+    # # print(ll.includes('a'))
+    # list_str = LinkedList()
+    # list_str.insert(Node(1))
+    # list_str.insert(Node(2))
+    # list_str.insert(Node(3))
+    # list_str.insert(Node(4))
+    # list_str.insert(Node(5))
+    # print(list_str.__str__())
+    # expected = '  Head-->  1->  2->  3->  4->  5->  None'
+    # print(expected)
     
     pass
 
