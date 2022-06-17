@@ -84,7 +84,7 @@ if __name__ == '__main__':
     # # ll.insert(b)
     # # ll.insert(c)
     # # print(ll.head.value)
-    # # list_insert = LinkedList()
+    # # list_inse LinkedList()
     # # list_insert.insert(Node(1))
     # # list_insert.insert(Node(2))
     # # list_insert.insert(Node(3))

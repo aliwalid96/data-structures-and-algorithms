@@ -1,3 +1,6 @@
+from inspect import stack
+
+
 class Node :
   """
   this class to creat a node that point to null
@@ -86,3 +89,34 @@ class Queue :
     """this method return true if the front .value is null"""
     return self.front.value
 
+
+
+def getmax(list1):
+  maxStack=0
+  stack=Stack()
+  [stack.push(value) for value in list1 if type(value)==int]
+  # print(stack.top.value)
+  while stack.top.next !=None:
+    # print(maxStack)
+    if stack.top.value > stack.top.next.value:
+      # print(stack.top.value)
+      if maxStack>stack.top.value:
+        maxStack=maxStack
+      else:
+        maxStack=stack.top.value
+
+      # print(maxStack)
+      stack.pop()
+    else:
+      if maxStack>stack.top.next.value:
+        maxStack=maxStack
+      else:
+        maxStack=stack.top.next.value
+      stack.pop()
+  return maxStack
+
+
+
+if __name__=='__main__':
+  a_list=[4,5,15,12]
+  print(getmax(a_list))
