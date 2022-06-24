@@ -6,7 +6,8 @@
 
 [stack-and-queue](./stack-and-queue/README.md)
 
-[stack-and-queue](../linked-list/README.md/README.md)
+[tree](/data-structures-and-algorithms/tree/README.md)
+
 
 
 
