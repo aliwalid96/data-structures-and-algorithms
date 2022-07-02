@@ -9,6 +9,8 @@
 [stack-and-queue](./stack-and-queue/README.md)
 
 [tree](/data-structures-and-algorithms/tree/README.md)
+[tree](/data-structures-and-algorithms/tree/README.md)
+
 
 
 
