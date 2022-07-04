@@ -12,6 +12,8 @@
 
 
 [breadth_first](./tree/tree_breadth_first/README.md)
+[hashtable](./hashtable/README.md)
+
 
 
 
