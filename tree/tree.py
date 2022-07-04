@@ -66,6 +66,8 @@ class BinaryTree:
 
         return array_tree
 
+
+
    
 
 
@@ -120,6 +122,8 @@ class BinarySearchTree(BinaryTree):
     def findMax(self):
         """ Finds the maximum value in a binary tree """
         return self.pre_order(self.root)[-1]  # will return the last element in the list of pre_order
+
+ 
 
 
 if __name__ == '__main__':
